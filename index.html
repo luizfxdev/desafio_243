@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornada Espacial de Zogg</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jornada Espacial de Zogg</h1>
+      <p class="subtitle">Calcule o combustível para a próxima aventura intergaláctica</p>
+
+      <div class="input-group">
+        <div class="input-field">
+          <label for="destino">Destino:</label>
+          <input type="text" id="destino" placeholder="Informe o Destino" />
+        </div>
+        <div class="input-field">
+          <label for="distancia">Distância (anos-luz):</label>
+          <input type="number" id="distancia" placeholder="Distância" />
+        </div>
+        <div class="input-field">
+          <label for="gravidade">Gravidade:</label>
+          <input type="number" step="0.1" id="gravidade" placeholder="Gravidade" />
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button id="adicionar" class="glow-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ADICIONAR
+        </button>
+        <button id="calcular" class="glow-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          CALCULAR
+        </button>
+        <button id="limpar" class="glow-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          LIMPAR
+        </button>
+      </div>
+      <br />
+      <br />
+      <div class="viagens-container">
+        <h2>Viagens Adicionadas</h2>
+        <div id="viagens-list"></div>
+      </div>
+
+      <div class="resultado-container">
+        <h2>Resultado</h2>
+        <div id="resultado"></div>
+        <div id="calculo-detalhado"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
